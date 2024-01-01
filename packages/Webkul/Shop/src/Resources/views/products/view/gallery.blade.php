@@ -4,7 +4,7 @@
 
 @pushOnce('scripts')
     <script type="text/x-template" id="v-product-gallery-template">
-        <div class="flex flex-col gap-[30px] h-max sticky top-[30px] max-1180:hidden">
+        <div class="flex flex-col gap-[30px] h-full sticky top-[30px] max-1180:hidden">
         
             
             <!-- Media shimmer Effect -->
@@ -20,7 +20,7 @@
                 v-show="! isMediaLoading"
             >
                 <img 
-                    class="min-w-full rounded-[12px]" 
+                    class="w-full h-full object-cover rounded-[12px]" 
                     :src="baseFile.path" 
                     v-if="baseFile.type == 'image'"
                     alt="@lang('shop::app.products.view.gallery.product-image')"
@@ -32,8 +32,8 @@
                     v-if="baseFile.type == 'video'"
                 >
                     <video  
-                        controls                             
-                        width='475'
+                        controls    
+                        class="w-full h-full"
                         @load="onMediaLoad()"
                     >
                         <source 

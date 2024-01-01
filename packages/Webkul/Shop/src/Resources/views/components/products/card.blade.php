@@ -11,18 +11,17 @@
             class='grid gap-2.5 content-start w-full relative'
             v-if="mode != 'list'"
         >
-            <div class="relative overflow-hidden group max-w-[291px] max-h-[300px] rounded-[4px]">
+            <div class="relative overflow-hidden group min-w-[400] min-h-[500px] rounded-[4px]">
                 <a
                     :href="`{{ route('shop.product_or_category.index', '') }}/${product.url_key}`"
                     :aria-label="product.name + ' '"
+                    class="w-full h-full"
                 >
                     <x-shop::media.images.lazy
                         class="relative after:content-[' '] after:block after:pb-[calc(100%+9px)] bg-[#F5F5F5] group-hover:scale-105 transition-all duration-300"
                         ::src="product.base_image.medium_image_url"
                         ::key="product.id"
                         ::index="product.id"
-                        width="291"
-                        height="300"
                         ::alt="product.name"
                     ></x-shop::media.images.lazy>
                 </a>

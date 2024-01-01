@@ -21,6 +21,7 @@
         :uploaded-videos="$product->videos"
     >
     </x-admin::media.videos>
+    <input type="text" placeholder="or video link here test">
 </div>
 
 {!! view_render_event('bagisto.admin.catalog.product.edit.form.videos.after', ['product' => $product]) !!}

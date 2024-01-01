@@ -95,7 +95,6 @@
                             <span class="icon-sort-down text-[24px]"></span>
                         </button>
                     </x-slot:toggle>
-
                     {{-- Dropdown Content --}}
                     <x-slot:content class="!p-[0px]">
                         @foreach ($currentChannel->locales as $locale)

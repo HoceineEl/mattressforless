@@ -52,7 +52,7 @@ return [
         'sort'       => 5,
         'icon'       => '',
     ],
-    
+
     /**
      * Catalog.
      */
@@ -86,6 +86,12 @@ return [
         'route'      => 'admin.catalog.families.index',
         'sort'       => 4,
         'icon'       => '',
+    ], [
+        'key'        => 'catalog.families',
+        'name'       => 'admin::app.components.layouts.sidebar.attribute-families',
+        'route'      => 'admin.catalog.families.index',
+        'sort'       => 5,
+        'icon'       => '',
     ],
 
     /**
@@ -116,7 +122,7 @@ return [
         'sort'       => 3,
         'icon'       => '',
     ],
-    
+
     /**
      * CMS.
      */
@@ -127,7 +133,7 @@ return [
         'sort'       => 5,
         'icon'       => 'icon-cms',
     ],
-    
+
 
     /**
      * Marketing.
@@ -194,7 +200,7 @@ return [
         'sort'       => 3,
         'icon'       => '',
     ],
-    
+
     /**
      * Reporting.
      */
